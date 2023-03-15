@@ -1,4 +1,4 @@
-name: cypress-clouc.yml
+name: cypress-cloud.yml
 
 on: 
   workflow_dispatch:
