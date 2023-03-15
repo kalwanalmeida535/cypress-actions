@@ -10,4 +10,4 @@ module.exports = defineConfig({
     viewportHeight: 720,
     baseUrl: "https://loginxp.vercel.app"
   }
-});
+}); 
