@@ -1,6 +1,11 @@
 name: Cypress Tests
 
-on: [push]
+on: 
+  workflow_dispatch:
+    inputs: 
+      cli:
+        description: run by cypress command line
+        default: yarn cypress run
 
 jobs:
   cypress-electron-tests:
@@ -13,4 +18,4 @@ jobs:
         run: yarn install
 
       - name: run E2E tests
-        run: yarn cypress run
+        run: ${{ github.evet,inputs.cli }}
