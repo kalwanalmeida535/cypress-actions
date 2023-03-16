@@ -1,4 +1,4 @@
-name: cypress-cloud.yml
+name: Cypress Cloud
 
 on: 
   workflow_dispatch:
@@ -20,7 +20,7 @@ jobs:
           install-command: yarn install
           browser: electron
           record: true
-          group: UI electron
+          group: UI Electron
           spec: $ {{ github.event.inputs.spec }}
         env:
           CYPRESS_RECORD_KEY: 2123d95b-cad7-46c1-b9b1-cc75f6a91422
